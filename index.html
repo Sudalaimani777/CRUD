@@ -11,59 +11,59 @@
     
     <h1>USER DETAILS</h1>
 
-    <div class="container">
+        <div class="container">
 
-        <!-- FORM -->
-        <div class="column">
+            <!-- FORM -->
+            <div class="column">
 
-            <!-- FIRST AND LAST NAME FIELDS -->
-            <div class="container">
-                <div class="column">
-                    <label for="inputFirstName">First Name :</label>
-                    <input type="text" name="firstname" id="inputFirstName" placeholder="Vijay">
+                <!-- FIRST AND LAST NAME FIELDS -->
+                <div class="container">
+                    <div class="column">
+                        <label for="inputFirstName">First Name :</label>
+                        <input type="text" name="firstname" id="inputFirstName" placeholder="Vijay">
+                    </div>
+                    <div class="column">
+                        <label for="inputLastName">Last Name :</label>
+                        <input type="text" name="lastname" id="inputLastName" placeholder="Kumar">
+                    </div>
                 </div>
-                <div class="column">
-                    <label for="inputLastName">Last Name :</label>
-                    <input type="text" name="lastname" id="inputLastName" placeholder="Kumar">
+
+                <!-- EMAIL AND MOBILE NUMBER FIELDS -->
+                <div class="container">
+                    <div class="column">
+                        <label for="inputEmail">Email :</label>
+                        <input type="email" id="inputEmail" placeholder="vijay@123">
+                    </div>
+                    <div class="column">
+                        <label for="inputMobileNumber">Mobile Number :</label>
+                        <input type="text" name="mobileNumber" id="inputMobileNumber" placeholder="123456789">
+                    </div>
+                </div>
+                <!-- BUTTON SECTION -->
+                <div class="button-container">
+                    <button id="submit-btn" onclick="handleSubmitEvent()">Submit</button>
+
                 </div>
             </div>
 
-            <!-- EMAIL AND MOBILE NUMBER FIELDS -->
-            <div class="container">
-                <div class="column">
-                    <label for="inputEmail">Email :</label>
-                    <input type="email" id="inputEmail" placeholder="vijay@123">
-                </div>
-                <div class="column">
-                    <label for="inputMobileNumber">Mobile Number :</label>
-                    <input type="text" name="mobileNumber" id="inputMobileNumber" placeholder="123456789">
-                </div>
-            </div>
-            <!-- BUTTON SECTION -->
-            <div class="button-container">
-                <button id="submit-btn" onclick="handleSubmitEvent()">Submit</button>
-                
-            </div>
-        </div>
-
-        <!-- TABLE -->
-        <div class="column">
-            <table>
-                <thead>
-                    <tr>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Email</th>
-                        <th>Phone</th>
-                        <th>Remove Your Details</th>
-                    </tr>
+            <!-- TABLE -->
+            <div class="column">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Remove Your Details</th>
+                        </tr>
                     <tbody id="userDetails">
-                       
+
                     </tbody>
-                </thead>
-            </table>
+                    </thead>
+                </table>
+            </div>
         </div>
-    </div>
 
     <script src="script.js" defer></script>
 </body>
